@@ -71,6 +71,309 @@ button {
 button:hover { transform:scale(1.06); background:rgba(255,255,255,.3); }  
   
 /* ===== ФОТКИ ===== */  
+  
+.peek-under {  
+  position: fixed;  
+  top: 28px;  
+  left: 12px;  
+  width: 120px;  
+  height: auto;  
+  z-index: 21;  
+  transform: translateY(-150px);  
+  opacity: 0;  
+  transition: transform 0.8s ease, opacity 0.5s ease;  
+}  
+  
+/* ===== ТЕКСТЫ ===== */  
+.birthday-text {  
+  width: calc(100% - 2rem);  
+  max-width: 900px;  
+  margin: 6rem auto 1rem auto;  
+  padding: 1.5rem;  
+  font-family:'Georgia', serif;  
+  font-size: 18px;  
+  line-height: 1.6;  
+  color:#fff;  
+  background: rgba(0,0,0,0.25);  
+  border-radius: 16px;  
+  backdrop-filter: blur(5px);  
+}  
+  
+.personal-note {  
+  width: calc(100% - 2rem);  
+  max-width: 800px;  
+  margin: 2rem auto 3rem auto;  
+  padding: 1rem 1.5rem;  
+  font-family: 'Georgia', serif;  
+  font-size: 18px;  
+  line-height: 1.5;  
+  color:#ffd166;  
+  text-align:center;  
+}  
+  
+/* ===== ВИДЕО ===== */  
+.video-container {  
+  width: 90%;  
+  max-width: 800px;  
+  margin: 2rem auto 0 auto;  
+  text-align: center;  
+}  
+.video-container iframe {  
+  width: 100%;  
+  height: 450px;  
+  border: none;  
+  border-radius: 12px;  
+}  
+.video-caption {  
+  font-size: 12px;  
+  margin-top: 4px;  
+  color: rgba(255,255,255,0.7);  
+}  
+  
+/* ===== ВТОРАЯ ЧАСТЬ ===== */  
+.second-part {  
+  margin: 2rem 0 5rem 0;  
+  text-align:center;  
+}  
+.second-part h3 {  
+  font-family:'Georgia', serif;  
+  font-size: 18px;  
+  font-weight:400;  
+  margin-bottom: 1rem;  
+}  
+.second-part .btn2 {  
+  width: 60px;  
+  height: 60px;  
+  border-radius: 50%;  
+  border:2px solid rgba(255,255,255,.4);  
+  background: rgba(255,255,255,.15);  
+  color:#fff;  
+  font-size: 24px;  
+  cursor:pointer;  
+  display:inline-flex;  
+  align-items:center;  
+  justify-content:center;  
+  transition:.3s;  
+  text-decoration:none;  
+}  
+.second-part .btn2:hover { transform:scale(1.1); background: rgba(255,255,255,.3); }  
+  
+/* ===== ВИШЛИСТ ===== */  
+.wishlist {  
+  margin: 3rem 0;  
+  text-align:center;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<div class="corner-text">Макс, иди нахуй</div>  
+  
+<canvas id="bg"></canvas>  
+<canvas id="fireworks"></canvas>  
+  
+
+<img src="https://i.postimg.cc/mk2RDqYK/1766590420387.jpg" class="peek-under" id="underImg">  
+  
+<div class="page">  
+  <h1>С Днём Рождения</h1>  
+  <button id="btn">🎉 Праздновать</button>  
+  
+  <div class="birthday-text">  
+Понял, нужно что-то клишированное и собранное из самых ходовых шаблонов, чтобы даже нейросеть сказала «банально».    
+  
+---    
+  
+Промпт: Напиши стандартное, шаблонное поздравление с 17-летием для парня по имени Максим. Обычные пожелания. Без изысков.    
+  
+Результат:    
+  
+С Днём Рождения, Максим!    
+  
+Поздравляю тебя с 17-летием! 🥳🎂    
+  
+Желаю бесконечного счастья, крепкого здоровья и огромной удачи! Пусть все твои мечты и цели сбываются, а каждый новый день приносит только радость и яркие впечатления. Будь всегда таким же крутым, уверенным в себе и иди только вперёд к своим вершинам!    
+  
+Пусть рядом будут верные друзья, а в семье царят понимание и поддержка. Успехов в учёбе, крутых идей и вдохновения для их реализации!    
+  
+С праздником! От всей души! 🎉🎁  
+  </div>  
+  
+  <div class="personal-note">  
+    Эт от нейронки, а от меня тогда смерти, неудач и т.д  
+  </div>  
+  
+  <h2>Короч я решил запариться и походил по людям, повымолял у них поздравлений👇👇👇</h2>  
+  
+  <div class="video-container">  
+    <iframe src="https://drive.google.com/file/d/14Husdd7vGtrE6XhaWHu79c9I0fZNbQBb/preview" allow="autoplay" allowfullscreen></iframe>  
+    <div class="video-caption">не работает-перезайди чел</div>  
+  </div>  
+  
+  <div class="video-container">  
+    <iframe src="https://drive.google.com/file/d/1t1cHQBpGJcl-9fHwnGGCk1EEFyJpznda/preview" allow="autoplay" allowfullscreen></iframe>  
+    <div class="video-caption">не работает-перезайди чел</div>  
+  </div>  
+  
+  <h2>Мрази задержали заказ, но я те скину когда все придёт. Немного, но лучше чем ничего</h2>  
+  <div class="wishlist"></div>  
+  
+  <div class="second-part">  
+    <h3>2 часть поздравления👇👇👇</h3>  
+    <a href="https://kirgizik.github.io/3ng.html/" class="btn2">2</a>  
+  </div>  
+  
+</div>  
+  
+<script>  
+// ===== Инициализация canvas =====  
+const canvas = document.getElementById('bg');  
+const ctx = canvas.getContext('2d');  
+const fireCanvas = document.getElementById('fireworks');  
+const fctx = fireCanvas.getContext('2d');  
+  
+let W,H;  
+function resize(){   
+  W=window.innerWidth;   
+  H=window.innerHeight;   
+  canvas.width = fireCanvas.width = W*devicePixelRatio;   
+  canvas.height = fireCanvas.height = H*devicePixelRatio;   
+  canvas.style.width = fireCanvas.style.width = W+'px';   
+  canvas.style.height = fireCanvas.style.height = H+'px';   
+  ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);   
+  fctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);   
+}  
+resize();  
+window.addEventListener('resize', resize);  
+  
+/* ===== ШАРИКИ 🎈 ===== */  
+const balloons=[];  
+for(let i=0;i<35;i++){  
+  balloons.push({x:Math.random()*W,y:Math.random()*H,speed:0.4+Math.random()*0.9,size:26+Math.random()*18,drift:Math.random()*0.6-0.3});  
+}  
+  
+/* ===== ПЛАВАЮЩИЕ ЭМОДЗИ ===== */  
+const emojis=['🖕','🎂','🇺🇦'];  
+const floatEmojis=[];  
+for(let i=0;i<25;i++){  
+  floatEmojis.push({  
+    x:Math.random()*W,  
+    y:H+Math.random()*200,  
+    vy:0.3+Math.random()*0.8,  
+    size:20+Math.random()*25,  
+    emoji:emojis[Math.floor(Math.random()*emojis.length)]  
+  });  
+}  
+  
+/* ===== МЕРЦАЮЩИЕ ТОЧКИ ===== */  
+const sparks=[];  
+for(let i=0;i<45;i++){  
+  sparks.push({x:Math.random()*W,y:Math.random()*H,r:1+Math.random()*2,phase:Math.random()*Math.PI*2});  
+}  
+  
+/* ===== ПАДАЮЩИЕ ЗВЁЗДЫ ===== */  
+const stars=[];  
+function createStar(){ stars.push({x:Math.random()*W*0.8,y:-40,vx:7,vy:7,life:0}); }  
+setInterval(createStar,6000);  
+  
+/* ===== САЛЮТ ===== */  
+let fireworks=[];  
+class Particle{  
+  constructor(x,y,color){this.x=x;this.y=y;this.vx=(Math.random()-0.5)*7;this.vy=(Math.random()-1.2)*9;this.alpha=1;this.color=color; this.size=Math.random()*3+2;}  
+  update(){this.x+=this.vx;this.y+=this.vy; this.vy+=0.05;this.alpha-=0.015;}  
+  draw(){fctx.globalAlpha=this.alpha; fctx.fillStyle=this.color;fctx.beginPath();fctx.arc(this.x,this.y,this.size,0,Math.PI*2);fctx.fill();fctx.globalAlpha=1;}  
+}  
+function launchFireworks(count=10){  
+  const colors=['#ffd166','#ef476f','#06d6a0','#118ab2','#f72585'];  
+  for(let j=0;j<count;j++){ const x=Math.random()*W,y=H*0.6-Math.random()*150;  
+    for(let i=0;i<60;i++) fireworks.push(new Particle(x,y,colors[Math.floor(Math.random()*colors.length)]));  
+  }  
+}  
+  
+/* ===== ТОРТ 🎂 ===== */  
+let cakeTimer=0;  
+function drawCake(){if(cakeTimer<=0)return; cakeTimer--; const alpha=Math.min(cakeTimer/40,1); ctx.globalAlpha=alpha*0.25; ctx.font='140px serif'; ctx.textAlign='center'; ctx.fillText('🎂',W/2,H-60); ctx.globalAlpha=1;}  
+  
+/* ===== АНИМАЦИЯ ===== */  
+function draw(){  
+  ctx.clearRect(0,0,W,H);  
+  fctx.clearRect(0,0,W,H);  
+  
+  balloons.forEach(b=>{  
+    b.y-=b.speed; b.x+=b.drift;  
+    if(b.y<-60)b.y=H+60;  
+    if(b.x<-60)b.x=W+60;  
+    if(b.x>W+60)b.x=-60;  
+    ctx.font=`${b.size}px serif`; ctx.fillText('🎈',b.x,b.y);  
+  });  
+  
+  floatEmojis.forEach(e=>{  
+    e.y-=e.vy; e.x+=Math.sin(e.y/50)*0.5;  
+    if(e.y<-50){ e.y=H+50; e.x=Math.random()*W; e.emoji=emojis[Math.floor(Math.random()*emojis.length)]; }  
+    ctx.font=`${e.size}px serif`; ctx.fillText(e.emoji,e.x,e.y);  
+  });  
+  
+  sparks.forEach(s=>{ s.phase+=0.03; const a=0.15+Math.sin(s.phase)*0.15; ctx.fillStyle=`rgba(255,255,255,${a})`; ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fill(); });  
+  
+  stars.forEach((s,i)=>{ s.life++; s.x+=s.vx; s.y+=s.vy; ctx.strokeStyle=`rgba(255,255,255,${1-s.life/25})`; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(s.x,s.y); ctx.lineTo(s.x-s.vx*4,s.y-s.vy*4); ctx.stroke(); if(s.life>25) stars.splice(i,1); });  
+  
+  drawCake();  
+  
+  fireworks.forEach((p,i)=>{ p.update(); p.draw(); if(p.alpha<=0)fireworks.splice(i,1); });  
+  
+  requestAnimationFrame(draw);  
+}  
+draw();  
+  
+const underImg=document.getElementById('underImg');
+function showUnderImg(){ underImg.style.transform='translateY(0px)'; underImg.style.opacity=1; }
+function hideUnderImg(){ underImg.style.transform='translateY(-150px)'; underImg.style.opacity=0; }
+
+document.getElementById('btn').onclick=()=>{
+  launchFireworks(12);
+  cakeTimer=90;
+  showUnderImg();
+  setTimeout(()=>{ hideUnderImg(); },2000);
+};  
+</script>  
+</body>  
+</html>  color:#fff;  
+  z-index:20;  
+}  
+  
+canvas { position:fixed; inset:0; width:100%; height:100%; pointer-events:none; }  
+  
+.page {  
+  position:relative;  
+  z-index:10;  
+  min-height:100%;  
+  display:flex;  
+  flex-direction:column;  
+  align-items:center;  
+  justify-content:flex-start;  
+  color:#fff;  
+  text-align:center;  
+  padding-top:120px;  
+}  
+  
+h1 { font-family:'Playfair Display', serif; font-size:5rem; margin-bottom:2rem; }  
+h2 { font-family:'Georgia', serif; font-size:2rem; font-weight:500; margin:3rem 0 1.5rem 0; }  
+h3 { font-family:'Georgia', serif; font-size:1.8rem; font-weight:500; margin:2rem 0 1rem 0; }  
+  
+button {  
+  padding:1rem 2.5rem;  
+  font-size:1.4rem;  
+  font-weight:700;  
+  border-radius:14px;  
+  border:2px solid rgba(255,255,255,.4);  
+  background:rgba(255,255,255,.15);  
+  color:#fff;  
+  cursor:pointer;  
+  transition:.3s;  
+}  
+button:hover { transform:scale(1.06); background:rgba(255,255,255,.3); }  
+  
+/* ===== ФОТКИ ===== */  
 .peek-image {  
   position: fixed;  
   width: 200px;  
